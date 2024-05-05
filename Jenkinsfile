@@ -21,7 +21,7 @@ pipeline {
                 sh 'terraform plan'
             }
         }
-        tage('destroy'){
+        stage('destroy'){
             steps{
                 sh 'terraform destroy --auto-approve'
             }
